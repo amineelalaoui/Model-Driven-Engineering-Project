@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<petrinet:PetriNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:petrinet="http://petrinet" name="Developpement Process">
+  <node xsi:type="petrinet:Transition" name="Conception_finish"/>
+  <node xsi:type="petrinet:Place" name="Conception_started"/>
+  <node xsi:type="petrinet:Transition" name="Conception_start"/>
+  <node xsi:type="petrinet:Place" name="Conception_ready" nbJetons="1"/>
+  <node xsi:type="petrinet:Place" name="Conception_running"/>
+  <node xsi:type="petrinet:Place" name="Conception_finished"/>
+  <node xsi:type="petrinet:Place" name="Développement_started"/>
+  <node xsi:type="petrinet:Place" name="Développement_running"/>
+  <node xsi:type="petrinet:Transition" name="Développement_finish"/>
+  <node xsi:type="petrinet:Place" name="Développement_ready" nbJetons="1"/>
+  <node xsi:type="petrinet:Place" name="Développement_finished"/>
+  <node xsi:type="petrinet:Transition" name="Développement_start"/>
+  <node xsi:type="petrinet:Place" name="RédactionDoc_started"/>
+  <node xsi:type="petrinet:Place" name="RédactionDoc_finished"/>
+  <node xsi:type="petrinet:Transition" name="RédactionDoc_finish"/>
+  <node xsi:type="petrinet:Place" name="RédactionDoc_ready" nbJetons="1"/>
+  <node xsi:type="petrinet:Transition" name="RédactionDoc_start"/>
+  <node xsi:type="petrinet:Place" name="RédactionDoc_running"/>
+  <node xsi:type="petrinet:Transition" name="RédactionTest_start"/>
+  <node xsi:type="petrinet:Place" name="RédactionTest_started"/>
+  <node xsi:type="petrinet:Transition" name="RédactionTest_finish"/>
+  <node xsi:type="petrinet:Place" name="RédactionTest_running"/>
+  <node xsi:type="petrinet:Place" name="RédactionTest_finished"/>
+  <node xsi:type="petrinet:Place" name="RédactionTest_ready" nbJetons="1"/>
+  <node xsi:type="petrinet:Place" name="ressource_Concepteur" nbJetons="3"/>
+  <node xsi:type="petrinet:Place" name="ressource_Developpeur" nbJetons="2"/>
+  <node xsi:type="petrinet:Place" name="ressource_machine" nbJetons="4"/>
+  <node xsi:type="petrinet:Place" name="ressource_redacteur" nbJetons="1"/>
+  <node xsi:type="petrinet:Place" name="ressource_testeur" nbJetons="2"/>
+  <arc poids="1" target="//@node.4" source="//@node.2"/>
+  <arc poids="1" target="//@node.1" source="//@node.2"/>
+  <arc poids="1" target="//@node.5" source="//@node.0"/>
+  <arc poids="1" target="//@node.2" source="//@node.3"/>
+  <arc poids="1" target="//@node.0" source="//@node.4"/>
+  <arc poids="1" target="//@node.8" source="//@node.7"/>
+  <arc poids="1" target="//@node.11" source="//@node.9"/>
+  <arc poids="1" target="//@node.6" source="//@node.11"/>
+  <arc poids="1" target="//@node.7" source="//@node.11"/>
+  <arc poids="1" target="//@node.10" source="//@node.8"/>
+  <arc poids="1" target="//@node.17" source="//@node.16"/>
+  <arc poids="1" target="//@node.14" source="//@node.17"/>
+  <arc poids="1" target="//@node.12" source="//@node.16"/>
+  <arc poids="1" target="//@node.13" source="//@node.14"/>
+  <arc poids="1" target="//@node.16" source="//@node.15"/>
+  <arc poids="1" target="//@node.20" source="//@node.21"/>
+  <arc poids="1" target="//@node.21" source="//@node.18"/>
+  <arc poids="1" target="//@node.19" source="//@node.18"/>
+  <arc poids="1" target="//@node.18" source="//@node.23"/>
+  <arc poids="1" target="//@node.22" source="//@node.20"/>
+  <arc poids="1" readArc="true" target="//@node.16" source="//@node.1"/>
+  <arc poids="1" readArc="true" target="//@node.18" source="//@node.1"/>
+  <arc poids="1" readArc="true" target="//@node.16" source="//@node.1"/>
+  <arc poids="1" readArc="true" target="//@node.18" source="//@node.6"/>
+  <arc poids="1" readArc="true" target="//@node.11" source="//@node.1"/>
+  <arc poids="1" target="//@node.24" source="//@node.0"/>
+  <arc poids="1" target="//@node.2" source="//@node.24"/>
+  <arc poids="1" target="//@node.26" source="//@node.0"/>
+  <arc poids="1" target="//@node.2" source="//@node.26"/>
+  <arc poids="1" target="//@node.16" source="//@node.26"/>
+  <arc poids="1" target="//@node.26" source="//@node.14"/>
+  <arc poids="1" target="//@node.16" source="//@node.27"/>
+  <arc poids="1" target="//@node.27" source="//@node.14"/>
+  <arc poids="1" target="//@node.25" source="//@node.8"/>
+  <arc poids="1" target="//@node.11" source="//@node.25"/>
+  <arc poids="1" target="//@node.11" source="//@node.26"/>
+  <arc poids="1" target="//@node.26" source="//@node.8"/>
+  <arc poids="1" target="//@node.18" source="//@node.26"/>
+  <arc poids="1" target="//@node.26" source="//@node.20"/>
+  <arc poids="1" target="//@node.28" source="//@node.20"/>
+  <arc poids="1" target="//@node.18" source="//@node.28"/>
+</petrinet:PetriNet>

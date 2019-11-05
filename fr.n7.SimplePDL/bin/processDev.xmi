@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplepdl:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:simplepdl="http://simplepdl"
+    xsi:schemaLocation="http://simplepdl SimplePDL.ecore"
+    name="Developpement Process">
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processElements.4 //@processElements.5 //@processElements.6 //@processElements.8"
+      name="Conception"
+      ressourcecons="//@processElements.14 //@processElements.15"/>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processElements.8"
+      linksToSuccessors="//@processElements.7"
+      name="Développement"
+      ressourcecons="//@processElements.18 //@processElements.19"/>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processElements.4 //@processElements.6"
+      name="RédactionDoc"
+      ressourcecons="//@processElements.16 //@processElements.17"/>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processElements.5 //@processElements.7"
+      name="RédactionTest"
+      ressourcecons="//@processElements.20 //@processElements.21"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processElements.0"
+      successor="//@processElements.2"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processElements.0"
+      successor="//@processElements.3"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToFinish"
+      predecessor="//@processElements.0"
+      successor="//@processElements.2"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToFinish"
+      predecessor="//@processElements.1"
+      successor="//@processElements.3"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToStart"
+      predecessor="//@processElements.0"
+      successor="//@processElements.1"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      type="Concepteur"
+      quantity="3"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      type="Developpeur"
+      quantity="2"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      type="machine"
+      quantity="4"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      type="redacteur"
+      quantity="1"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      type="testeur"
+      quantity="2"/>
+  <processElements
+      xsi:type="simplepdl:RessourceConso"
+      WorkDefinition="//@processElements.0"
+      quantity="2"
+      ressource="//@processElements.9"/>
+  <processElements
+      xsi:type="simplepdl:RessourceConso"
+      WorkDefinition="//@processElements.0"
+      quantity="2"
+      ressource="//@processElements.11"/>
+  <processElements
+      xsi:type="simplepdl:RessourceConso"
+      WorkDefinition="//@processElements.2"
+      quantity="1"
+      ressource="//@processElements.11"/>
+  <processElements
+      xsi:type="simplepdl:RessourceConso"
+      WorkDefinition="//@processElements.2"
+      quantity="1"
+      ressource="//@processElements.12"/>
+  <processElements
+      xsi:type="simplepdl:RessourceConso"
+      WorkDefinition="//@processElements.1"
+      quantity="2"
+      ressource="//@processElements.10"/>
+  <processElements
+      xsi:type="simplepdl:RessourceConso"
+      WorkDefinition="//@processElements.1"
+      quantity="3"
+      ressource="//@processElements.11"/>
+  <processElements
+      xsi:type="simplepdl:RessourceConso"
+      WorkDefinition="//@processElements.3"
+      quantity="2"
+      ressource="//@processElements.11"/>
+  <processElements
+      xsi:type="simplepdl:RessourceConso"
+      WorkDefinition="//@processElements.3"
+      quantity="1"
+      ressource="//@processElements.13"/>
+</simplepdl:Process>

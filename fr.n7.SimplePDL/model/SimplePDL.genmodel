@@ -7,13 +7,4 @@
     copyrightFields="false" operationReflection="true" importOrganizing="true">
   <foreignModel>SimplePDL.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
-  <genPackages prefix="SimplePDL" basePackage="fr.n7" disposableProviderFactory="true"
-      ecorePackage="SimplePDL.ecore#/">
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="SimplePDL.ecore#//WorkSequenceType"/>
-    <genClasses ecoreClass="SimplePDL.ecore#//ProcessElement"/>
-    <genClasses ecoreClass="SimplePDL.ecore#//Guidance"/>
-    <genClasses ecoreClass="SimplePDL.ecore#//WorkSequence"/>
-    <genClasses ecoreClass="SimplePDL.ecore#//WorkDefinition"/>
-    <genClasses ecoreClass="SimplePDL.ecore#//Process"/>
-  </genPackages>
 </genmodel:GenModel>
