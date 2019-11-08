@@ -72,42 +72,42 @@
       quantity="2"/>
   <processElements
       xsi:type="simplepdl:RessourceConso"
-      WorkDefinition="//@processElements.0"
+      workdefinition="//@processElements.0"
       quantity="2"
       ressource="//@processElements.9"/>
   <processElements
       xsi:type="simplepdl:RessourceConso"
-      WorkDefinition="//@processElements.0"
+      workdefinition="//@processElements.0"
       quantity="2"
       ressource="//@processElements.11"/>
   <processElements
       xsi:type="simplepdl:RessourceConso"
-      WorkDefinition="//@processElements.2"
+      workdefinition="//@processElements.2"
       quantity="1"
       ressource="//@processElements.11"/>
   <processElements
       xsi:type="simplepdl:RessourceConso"
-      WorkDefinition="//@processElements.2"
+      workdefinition="//@processElements.2"
       quantity="1"
       ressource="//@processElements.12"/>
   <processElements
       xsi:type="simplepdl:RessourceConso"
-      WorkDefinition="//@processElements.1"
+      workdefinition="//@processElements.1"
       quantity="2"
       ressource="//@processElements.10"/>
   <processElements
       xsi:type="simplepdl:RessourceConso"
-      WorkDefinition="//@processElements.1"
+      workdefinition="//@processElements.1"
       quantity="3"
       ressource="//@processElements.11"/>
   <processElements
       xsi:type="simplepdl:RessourceConso"
-      WorkDefinition="//@processElements.3"
+      workdefinition="//@processElements.3"
       quantity="2"
       ressource="//@processElements.11"/>
   <processElements
       xsi:type="simplepdl:RessourceConso"
-      WorkDefinition="//@processElements.3"
+      workdefinition="//@processElements.3"
       quantity="1"
       ressource="//@processElements.13"/>
 </simplepdl:Process>
